@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 void main() {
   runApp(
     MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         backgroundColor: Colors.teal,
         body: Center(
@@ -18,11 +19,21 @@ void main() {
                   backgroundImage: AssetImage('images/me.jpeg'),
                 ),
                 Text(
-                  "Nav Singh",
+                  'Nav Singh',
                   style: TextStyle(
                       fontSize: 40.0,
                       color: Colors.white,
+                      fontFamily: 'Pacifico',
                       fontWeight: FontWeight.bold),
+                ),
+                Text(
+                  'APP DEVELOPER',
+                  style: TextStyle(
+                      fontSize: 24.0,
+                      fontFamily: 'Source Sans Pro',
+                      letterSpacing: 2.5,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.teal.shade100),
                 )
               ],
             ),
